@@ -29,10 +29,10 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET","POST"])
 def home():
-	if request.method == 'GET'
-    	return "This is an simple OCR API, made by Alphageek"
+	if request.method == 'GET':
+		return "This is an simple OCR API, made by Alphageek"
 
-    else:
+	else:
 		req_data = request.get_json()
 		encoded_string = req_data["base64encodedimage"]
 		text = ocr.obtain_text_from_image(encoded_string.encode())
