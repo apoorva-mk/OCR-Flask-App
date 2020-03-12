@@ -30,7 +30,7 @@ app = Flask(__name__)
 @app.route("/", methods=["GET","POST"])
 def home():
 	if request.method == 'GET':
-		return "This is an simple OCR API, made by Alphageek"
+		return "This is an simple OCR API made by Alphageek"
 
 	else:
 		req_data = request.get_json()
