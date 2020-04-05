@@ -7,4 +7,4 @@ Simple message about app
 
 POST: (/)
 Send in the request body 
-{ "base64encodedimage":"XXXXXXX"}
+{ "base64encodedimage":"XXXXXXX"}	
